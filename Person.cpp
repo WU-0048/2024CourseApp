@@ -74,8 +74,8 @@ void Person::setBirthDate(const string& birthDate)
 void Person::display() const
 {
 	cout << "ID: " << id << endl;
-	cout << ": " << lastName << endl;
-	cout << ": " << firstName << endl;
-	cout << ": " << gender << endl;
-	cout << ": " << birthDate << endl;
+	cout << "姓: " << lastName << endl;
+	cout << "名: " << firstName << endl;
+	cout << "性別: " << gender << endl;
+	cout << "生日: " << birthDate << endl;
 }

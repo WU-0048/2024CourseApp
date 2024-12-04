@@ -49,10 +49,10 @@ void Teacher::setCourses(const vector<Course>& courses)
 void Teacher::display() const
 {
 	Person::display();
-	cout << ": " << teacherId << endl;
-	cout << ": " << Utility::toString(department) << endl;
-	cout << ": " << Utility::toString(className) << endl;
-	cout << ": " << endl;
+	cout << "教師編號: " << teacherId << endl;
+	cout << "教師所屬系所: " << Utility::toString(department) << endl;
+	cout << "教師所授班級: " << Utility::toString(className) << endl;
+	cout << "教師所授課程: " << endl;
 	for (const Course& course : teachingCourses)
 	{
 		course.display();

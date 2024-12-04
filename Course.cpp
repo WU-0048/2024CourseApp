@@ -42,7 +42,7 @@ void Course::setCourseDescription(const string& courseDescription)
 
 void Course::display() const
 {
-	cout << ": " << courseId << endl;
-	cout << ": " << courseName << endl;
-	cout << ": " << courseDescription << endl;
+	cout << "課程代碼: " << courseId << endl;
+	cout << "課程名稱: " << courseName << endl;
+	cout << "課程描述: " << courseDescription << endl;
 }
