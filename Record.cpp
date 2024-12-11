@@ -32,11 +32,11 @@ string Record::getRecordDate() const
 	return string(buffer);
 }
 
-void Record::display()
+void Record::display() const
 {
-	cout << "��ҧǸ��G " << getRecordId() << endl;
-	cout << "�Ǹ��G " << getStudentId() << endl;
-	cout << "�ҵ{�N�X�G " << getCourseId() << endl;
-	cout << "��Ҥ���G" << getRecordDate() << endl;
+	cout << "選課序號:" << getRecordId() << endl;
+	cout << "學號:" << getStudentId() << endl;
+	cout << "課程代碼: " << getCourseId() << endl;
+	cout << "選課日期" << getRecordDate() << endl;
 	cout << "----------------" << endl;
 }

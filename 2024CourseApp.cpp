@@ -164,8 +164,12 @@ void listRecords()
 
 }
 void listStudents() {
-    // TODO: 實作列出所有學生的功能
-    // 這裡可以加入從資料庫或檔案讀取學生資料的邏輯
-    // 並將學生資料顯示在控制台上
+	cout << "學生資料總共有" << students.size() << "筆" << endl;
+	cout << "----------------" << endl;
+	for (const auto& student : students) {
+		student.display();
+		cout << endl;
+	}
+	cout << endl;
 }
 
