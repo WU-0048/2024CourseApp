@@ -163,12 +163,23 @@ void listRecords()
 	cout << endl;
 
 }
-void listStudents() {
-	cout << "學生資料總共有" << students.size() << "筆" << endl;
+void listStudentCourses() {
+	cout << "學生選課資料" << endl;
 	cout << "----------------" << endl;
 	for (const auto& student : students) {
-		student.display();
-		cout << endl;
+		cout << "學生學號: " << student.getStudentId() << ", 姓名: " << student.getLastName() << " " << student.getFirstName() << endl;
+		cout << "選課資料:" << endl;
+		for (const auto& record : records) {
+			if (record.getStudentId() == student.getStudentId()) {
+				for (const auto& course : courses) {
+					if (course.getCourseId() == record.getCourseId()) {
+						course.display();
+						cout << endl;
+					}
+				}
+			}
+		}
+		cout << "----------------" << endl;
 	}
 	cout << endl;
 }
