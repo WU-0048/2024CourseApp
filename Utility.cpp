@@ -5,13 +5,13 @@ string Utility::toString(Department department)
 {
 	switch (department) {
 	case Department::ComputerSciece:
-		return "";
+		return "資訊工程";
 	case Department::ElectricalEngineering:
-		return "";
+		return "電機工程";
 	case Department::ElectronicEngineering:
-		return "";
+		return "電子工程";
 	case Department::InformationManagement:
-		return "";
+		return "資訊管理";
 	default:
 		return "Unknown Department";
 	}

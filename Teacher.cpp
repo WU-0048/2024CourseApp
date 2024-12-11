@@ -1,4 +1,4 @@
-#include "Teacher.h"
+ï»¿#include "Teacher.h"
 #include <iostream>
 using namespace std;
 
@@ -49,10 +49,10 @@ void Teacher::setCourses(const vector<Course>& courses)
 void Teacher::display() const
 {
 	Person::display();
-	cout << "±Ð®v½s¸¹: " << teacherId << endl;
-	cout << "±Ð®v©ÒÄÝ¨t©Ò: " << Utility::toString(department) << endl;
-	cout << "±Ð®v©Ò±Â¯Z¯Å: " << Utility::toString(className) << endl;
-	cout << "±Ð®v©Ò±Â½Òµ{: " << endl;
+	cout << "ï¿½Ð®vï¿½sï¿½ï¿½: " << teacherId << endl;
+	cout << "ï¿½Ð®vï¿½ï¿½ï¿½Ý¨tï¿½ï¿½: " << Utility::toString(department) << endl;
+	cout << "ï¿½Ð®vï¿½Ò±Â¯Zï¿½ï¿½: " << Utility::toString(className) << endl;
+	cout << "ï¿½Ð®vï¿½Ò±Â½Òµ{: " << endl;
 	for (const Course& course : teachingCourses)
 	{
 		course.display();
